@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Figuras</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Calcula Áreas y/o Volumnes de Figuras</h1>
+        <h5>Selecciona una figura y una acción</h5>
+        	
+        	<p>Cubo:</p>
+				<form action="./servlet/figuras" method="post"> 
+ 				 	Lados:
+ 				 		<input type="hidden" name="tipo" value="cubo">
+  						<input type="text" name="cuboaltura" value="">
+  						<br>
+  						<input type="submit" name="cubosubmit" value="true">	
+  						<br>
+				</form>
+			
+			<p>Esfera:</p>
+				<form action="./servlet/figuras" method="post">
+ 				 	Radio:
+ 				 		<input type="hidden" name="tipo" value="esfera">
+  						<input type="text" name="esfearadio" value="">
+  						<br>
+  						<input type="submit" name="esferasubmit" value="Calcula">
+  						<br>
+				</form>
+			
+			<p>Cilindro:</p>
+				<form action="./servlet/figuras" method="post">
+ 				 	Altura:
+ 				 		<input type="hidden" name="tipo" value="cilindro">
+  						<input type="text" name="cilindroaltura" value="">
+  						<br>
+  					Radio:
+  						<input type="text" name="cilindroradio" value="">
+  						<br>
+  						<input type="submit" name="cilindrosubmit" value="Calcula">
+  						<br>
+				</form>
+			
+			<p>Cono:</p>
+				<form action="./servlet/figuras" method="post">
+ 				 	Altura:
+ 				 		<input type="hidden" name="tipo" value="cono">
+  						<input type="text" name="conoaltura" value="">
+  						<br>
+  					Radio:
+  						<input type="text" name="conoradio" value="">
+  						<br>
+  						<input type="submit" name="conosubmit" value="Calcula">
+  						<br>
+				</form>       
+    </body>
+</html>
